@@ -1,3 +1,6 @@
+![image](https://github.com/MirzaMahzaib/Ecommerce-Website/assets/56015022/cfc45bc8-7ad4-4cae-9391-da9bfea69bfd)
+
+
 # eCommerce Project in Core PHP
 
 This is my first-ever PHP project, an eCommerce platform built from scratch using core PHP. 
