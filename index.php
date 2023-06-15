@@ -4,30 +4,30 @@ include("includes/header.php");
 
 ?>
 
-	<!--container Begin-->
-	<div class="container" id="slider">
+<!--container Begin-->
+<div class="container" id="slider">
 
-		<!--col-md-12 begin-->
-		<div class="col-md-12">
-			
-			<!--carousel slide begin-->
-			<div class="carousel slide" id="myCarousel" data-ride="carousel">
-				
-				<!--carousel-indicators begin-->
-				<ol class="carousel-indicators">
-					
-					<li class="active" data-target="#myCarousel" data-slide-to="0"></li>
-					<li data-target="#myCarousel" data-slide-to="1"></li>
-					<li data-target="#myCarousel" data-slide-to="2"></li>
-					<li data-target="#myCarousel" data-slide-to="3"></li>
+	<!--col-md-12 begin-->
+	<div class="col-md-12">
 
-				</ol>
-				<!--carousel-indicators finish-->
+		<!--carousel slide begin-->
+		<div class="carousel slide" id="myCarousel" data-ride="carousel">
 
-				<!--carousel-inner begin-->
-				<div class="carousel-inner">
-					
-					<?php
+			<!--carousel-indicators begin-->
+			<ol class="carousel-indicators">
+
+				<li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#myCarousel" data-slide-to="3"></li>
+
+			</ol>
+			<!--carousel-indicators finish-->
+
+			<!--carousel-inner begin-->
+			<div class="carousel-inner">
+
+				<?php
 
 						$get_slides = "select * from slider LIMIT 0,1";
 
@@ -40,7 +40,6 @@ include("includes/header.php");
 							$slide_url = $row_slides['slide_url'];
 
 							echo "
-								
 								<div class='item active'>
 
 									<a href='$slide_url'>
@@ -82,47 +81,47 @@ include("includes/header.php");
 						}
 
 					?>
-					
-				</div>
-				<!--carousel-inner finish-->
-
-				<!--left carousel-control begin-->
-				<a href="#myCarousel" class="left carousel-control" data-slide="prev">
-					
-					<span class="glyphicon glyphicon-chevron-left"></span>
-					<span class="sr-only">Previous</span>
-
-				</a>
-				<!--left carousel-control finish-->
-
-				<!--right carousel-control begin-->
-				<a href="#myCarousel" class="right carousel-control" data-slide="next">
-					
-					<span class="glyphicon glyphicon-chevron-right"></span>
-					<span class="sr-only">Next</span>
-
-				</a>
-				<!--right carousel-control finish-->
 
 			</div>
-			<!--carousel slide finish-->
+			<!--carousel-inner finish-->
+
+			<!--left carousel-control begin-->
+			<a href="#myCarousel" class="left carousel-control" data-slide="prev">
+
+				<span class="glyphicon glyphicon-chevron-left"></span>
+				<span class="sr-only">Previous</span>
+
+			</a>
+			<!--left carousel-control finish-->
+
+			<!--right carousel-control begin-->
+			<a href="#myCarousel" class="right carousel-control" data-slide="next">
+
+				<span class="glyphicon glyphicon-chevron-right"></span>
+				<span class="sr-only">Next</span>
+
+			</a>
+			<!--right carousel-control finish-->
 
 		</div>
-		<!--col-md-12 finish-->
-		
+		<!--carousel slide finish-->
+
 	</div>
-	<!--container finish-->
+	<!--col-md-12 finish-->
 
-	<!--advantages begin-->
-	<div id="advantages">
-		
-		<!--container begin-->
-		<div class="container">
-			
-			<!--same-height-row begin-->
-			<div class="same-height-row">
+</div>
+<!--container finish-->
 
-				<?php
+<!--advantages begin-->
+<div id="advantages">
+
+	<!--container begin-->
+	<div class="container">
+
+		<!--same-height-row begin-->
+		<div class="same-height-row">
+
+			<?php
 
 					$get_boxes = "SELECT * FROM boxes_section";
 
@@ -139,79 +138,79 @@ include("includes/header.php");
 					
 
 				?>
-				
-				<!--col-sm-4 begin-->
-				<div class="col-sm-4">
-					
-					<!--box same-height begin-->
-					<div class="box same-height">
-						
-						<!--icon begin-->
-						<div class="icon">
-							
-							<i class="fa fa-heart"></i>
 
-						</div>
-						<!--icon finish-->
+			<!--col-sm-4 begin-->
+			<div class="col-sm-4">
 
-						<h3><a href="#"><?php echo $box_title; ?></a></h3>
+				<!--box same-height begin-->
+				<div class="box same-height">
 
-						<p><?php echo $box_desc; ?></p>
-						
+					<!--icon begin-->
+					<div class="icon">
+
+						<i class="fa fa-heart"></i>
+
 					</div>
-					<!--box same-height finish-->
+					<!--icon finish-->
+
+					<h3><a href="#"><?php echo $box_title; ?></a></h3>
+
+					<p><?php echo $box_desc; ?></p>
 
 				</div>
-				<!--col-sm-4 finish-->
-
-				<?php } ?>
+				<!--box same-height finish-->
 
 			</div>
-			<!--same-height-row finish-->
+			<!--col-sm-4 finish-->
+
+			<?php } ?>
+
+		</div>
+		<!--same-height-row finish-->
+
+	</div>
+	<!--container finish-->
+
+</div>
+<!--advantages finish-->
+
+<!--hot begin-->
+<div id="hot">
+	<!--box begin-->
+	<div class="box">
+
+		<!--container begin-->
+		<div class="container">
+
+			<!--col-md-12 begin-->
+			<div class="col-md-12">
+
+				<h2>Our Latest Products</h2>
+
+			</div>
+			<!--col-md-12 finish-->
 
 		</div>
 		<!--container finish-->
 
 	</div>
-	<!--advantages finish-->
+	<!--box finish-->
+</div>
+<!--hot finish-->
 
-	<!--hot begin-->
-	<div id="hot">
-		<!--box begin-->
-		<div class="box">
-			
-			<!--container begin-->
-			<div class="container">
+<!--container begin-->
+<div class="container" id="content">
 
-				<!--col-md-12 begin-->
-				<div class="col-md-12">
-					
-					<h2>Our Latest Products</h2>
+	<!--row begin-->
+	<div class="row">
 
-				</div>
-				<!--col-md-12 finish-->
-
-			</div>
-			<!--container finish-->
-
-		</div>
-		<!--box finish-->
-	</div>
-	<!--hot finish-->
-
-	<!--container begin-->
-	<div class="container" id="content">
-		
-		<!--row begin-->
-		<div class="row">
-			
-			<?php getPro(); ?>
-
-		</div>
-		<!--row finish-->
+		<?php getPro(); ?>
 
 	</div>
-	<!--container finish-->
+	<!--row finish-->
+
+</div>
+<!--container finish-->
 <!--5th Lecture Finish-->
 
 <!--6th Lecture Begin-->
@@ -226,7 +225,8 @@ include("includes/footer.php");
 
 
 
-    <script src="js/jquery-331.min.js"></script>
-    <script src="js/bootstrap-337.min.js"></script>    
+<script src="js/jquery-331.min.js"></script>
+<script src="js/bootstrap-337.min.js"></script>
 </body>
+
 </html>
